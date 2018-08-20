@@ -1,4 +1,4 @@
-# vue-admin
+# vue-cli 3.0 Demo
 
 ## Project setup
 ```
