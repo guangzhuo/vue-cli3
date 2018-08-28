@@ -13,7 +13,7 @@
 
 <script>
 import apis from '@/config/apis';
-import axios from '@/config/axios';
+// import axios from '@/config/axios';
  export default {
    data () {
      return {
@@ -24,7 +24,7 @@ import axios from '@/config/axios';
    created() {},
    mounted() {
      console.log(apis.typeList)
-      axios.get(apis.typeList,{}).then(data=>{
+      this.$axios.get(apis.typeList,{}).then(data=>{
         console.log(data)
       })
    },

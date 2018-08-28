@@ -28,10 +28,8 @@ proxy_path.forEach((item, index) => {
     }
 })
 module.exports = {
- // 基本路径
- baseUrl: process.env.NODE_ENV === 'production'
-    ? '/dev/'
-    : '/',
+ // 基本路径 process.env.NODE_ENV === 'production'
+ baseUrl: '/',
  // 输出文件目录
  outputDir: 'dist',
  // eslint-loader 是否在保存的时候检查

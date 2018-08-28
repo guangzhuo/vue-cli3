@@ -5,6 +5,7 @@ import store from "./store/index";
 import directives from "@/plugins/directive";
 import filters from "@/plugins/filters";
 import lazyload from 'vue-lazyload';
+import axios from '@/config/axios';
 // import { Button } from 'element-ui'; //可按需加载组件
 // Vue.use(Button);
 import ElementUI from 'element-ui';
@@ -18,7 +19,7 @@ Vue.use(ElementUI);
 Vue.use(directives);
 Vue.use(filters);
 
-
+Vue.prototype.$axios = axios;
 Vue.config.productionTip = false;
 
 new Vue({
