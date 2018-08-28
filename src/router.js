@@ -1,21 +1,21 @@
 import Vue from "vue";
 import Router from "vue-router";
-// import Index from '@/views/index';
-// import Test from '@/views/test';
 Vue.use(Router);
 
+const Index = resolve => require(['@/views/index'],resolve)
+const Test =  resolve => require(['@/views/test'],resolve)
 export default new Router({
   mode :'history',
   routes: [
     {
       path: "/",
       name: "index",
-      component: resolve => require(['@/views/index'],resolve)
+      component: Index
     },
     {
       path: '/test',
       name: 'test',
-      component: resolve => require(['@/views/test'],resolve)
+      component: Test
     }
   ]
 });

@@ -4,7 +4,8 @@
     <i class="icon icon-name"></i>
     <i class="icon icon-mp" v-imgerror></i>
     <el-button type="primary" @click="setLogin">主要按钮</el-button>
-    <div>{{"134567" | cut_str(3)}}</div>
+     <div>{{"134567" | cut_str(3)}}</div>
+     <div>{{new Date().getTime()| timeflier}}</div>
     <div class="imgWrap">
       <img class='maxImg' v-lazy="img" alt="">
     </div>
@@ -32,7 +33,8 @@ import apis from '@/config/apis';
      setLogin() {
       //  .dispatch('getLoginProducts',{'name':'gz'})
       console.log(this.$store.state.LoginStore.login)
-      console.log(this.$store.dispatch('getLoginProducts','222'))
+      // console.log(this.$store.dispatch('getLoginProducts','222'))
+      console.log(this.$store.commit('setProducts','222'))
       console.log(this.$store)
      }
    },
