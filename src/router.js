@@ -1,15 +1,20 @@
 import Vue from "vue";
 import Router from "vue-router";
 Vue.use(Router);
-
-const Index = resolve => require(['@/views/index'],resolve)
-const Test =  resolve => require(['@/views/test'],resolve)
-const NotFour =  resolve => require(['@/views/404'],resolve)
+const Login = resolve => require(['@/Login'],resolve)
+const Index = resolve => require(['@/views/Index'],resolve)
+const Test =  resolve => require(['@/Test'],resolve)
+const NotFour =  resolve => require(['@/views/Error-404'],resolve)
 export default new Router({
   mode :'history',
   routes: [
+      {
+          path: "/",
+          name: "login",
+          component: Login
+      },
     {
-      path: "/",
+      path: "/index",
       name: "index",
       component: Index
     },
@@ -20,7 +25,7 @@ export default new Router({
     },
       {
           path: '*',
-          name: '404',
+          name: 'NotFour-404',
           component: NotFour
       }
   ]
