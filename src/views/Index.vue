@@ -12,7 +12,7 @@
                      <el-menu-item index="3">工作台</el-menu-item>
                      <el-submenu index="2">
                          <template slot="title">
-                             <i class="el-icon-location"></i>
+                             <!--<i class="el-icon-location"></i>-->
                              <span slot="title">导航一</span>
                          </template>
                          <el-menu-item-group>

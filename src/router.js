@@ -23,7 +23,7 @@ export default new Router({
           name: "login",
           component: Login
       },
-    {
+      {
       path: "/index",
       name: "index",
       component: Index,
@@ -39,12 +39,12 @@ export default new Router({
           }
       ]
     },
-    {
-      path: '/test',
-      name: 'test',
-      component: Test
-    },
-    {
+      {
+          path: '/test',
+          name: 'test',
+          component: Test
+        },
+      {
           path: '*',
           name: 'NotFour-404',
           component: NotFour
