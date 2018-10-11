@@ -8,6 +8,19 @@ export default (Vue) => {
           }
     });
 
+    let clTime
+    Vue.directive('dacusClick',{
+      componentUpdated: function (el, binding, vnode, oldVnode) {
+        /*if(true) {
+          el.disabled = true
+          clTime = setTimeout(()=>{
+            el.disabled = false
+          },1000)
+        }*/
+      }
+    })
+
+
     
 
 }

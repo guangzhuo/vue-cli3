@@ -16,15 +16,81 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-name {
+.icon-u3772 {
   background-image: url(./sprite.png);
   background-position: 0px 0px;
+  width: 15px;
+  height: 11px;
+}
+.icon-u3765 {
+  background-image: url(./sprite.png);
+  background-position: 0px -15px;
+  width: 21px;
+  height: 20px;
+}
+.icon-u3761 {
+  background-image: url(./sprite.png);
+  background-position: 0px -39px;
+  width: 22px;
+  height: 20px;
+}
+.icon-weChat {
+  background-image: url(./sprite.png);
+  background-position: 0px -63px;
+  width: 30px;
+  height: 25px;
+}
+.icon-comupted {
+  background-image: url(./sprite.png);
+  background-position: 0px -92px;
+  width: 30px;
+  height: 28px;
+}
+.icon-u656 {
+  background-image: url(./sprite.png);
+  background-position: 0px -124px;
+  width: 28px;
+  height: 30px;
+}
+.icon-u657 {
+  background-image: url(./sprite.png);
+  background-position: 0px -158px;
+  width: 24px;
+  height: 30px;
+}
+.icon-u658 {
+  background-image: url(./sprite.png);
+  background-position: 0px -192px;
+  width: 25px;
+  height: 30px;
+}
+.icon-u659 {
+  background-image: url(./sprite.png);
+  background-position: 0px -226px;
+  width: 30px;
+  height: 30px;
+}
+.icon-name {
+  background-image: url(./sprite.png);
+  background-position: 0px -260px;
   width: 29px;
   height: 35px;
 }
+.icon-weChatLogo {
+  background-image: url(./sprite.png);
+  background-position: 0px -299px;
+  width: 40px;
+  height: 40px;
+}
 .icon-mp {
   background-image: url(./sprite.png);
-  background-position: 0px -39px;
+  background-position: 0px -343px;
   width: 41px;
   height: 41px;
+}
+.icon-mouse {
+  background-image: url(./sprite.png);
+  background-position: 0px -388px;
+  width: 224px;
+  height: 262px;
 }

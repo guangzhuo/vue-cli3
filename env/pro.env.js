@@ -1,4 +1,4 @@
 module.exports = {
     NODE_ENV: "'production'",
-    hosturl: ""
+    hosturl: "http://biz.bigmeddata.com"
 }

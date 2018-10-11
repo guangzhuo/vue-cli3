@@ -6,18 +6,21 @@ function resolve (dir) {
 }
 
 // 代理标识
-const proxy_path = ['/contract'];
+const proxy_path = ['/v1'];
 let pro_env = require('./env/pro.env');  // 生产环境
 let test_env = require('./env/test.env');  // 测试环境
 let dev_env = require('./env/dev.env');  // 本地环境
+let huidu_env = require('./env/huidu.env');  // 本地环境
 let env = process.env.NODE_ENV;
 let target = '';
 if(env === 'production') {
     target = pro_env.hosturl;
 } else if (env === 'test') {
     target = test_env.hosturl;
+} else if(env === 'huidu'){
+    target = huidu_env.hosturl;
 } else {
-    target = dev_env.hosturl;
+  target = dev_env.hosturl;
 }
 let proxyObj = {};
 proxy_path.forEach((item, index) => {
@@ -66,7 +69,15 @@ module.exports = {
             }
         }),
         
-     ]
+     ],
+   externals: {
+     //放弃打包的组件
+     vue: "Vue",
+     // vuex: "Vuex",
+     // "vue-router": "VueRouter",
+     "echarts": "echarts",
+     "element-ui": "ElementUI"
+   }
  },
  // vue-loader 配置项
  // https://vue-loader.vuejs.org/en/options.html
